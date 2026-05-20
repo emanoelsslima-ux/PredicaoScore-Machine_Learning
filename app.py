@@ -91,6 +91,15 @@ if st.button("Realizar previsão"):
 
     st.write(f"Classificação do modelo: {resultado}")
 
+    probabilidades = modelo.predict_proba(dados)
+
+    classes = modelo.classes_
+
+    st.subheader("Probabilidade por categoria")
+
+    for classe, prob in zip(classes, probabilidades[0]):
+     st.write(f"{classe}: {prob*100:.2f}%")
+
     # Mostrar dados usados
     st.write("Dados utilizados:")
     st.dataframe(dados)
