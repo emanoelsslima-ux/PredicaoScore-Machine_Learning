@@ -17,7 +17,8 @@ O projeto utiliza um modelo de classificação treinado com Random Forest e uma 
 
 ## Estrutura do projeto
 
- Previsao-clientes-ml
+ ```txt
+Previsao-clientes-ml
  ┣ assets
  ┃ ┣ previewGood.png
  ┃ ┣ previewPoor.png
@@ -34,6 +35,7 @@ O projeto utiliza um modelo de classificação treinado com Random Forest e uma 
  ┣ modelo.pkl
  ┣ requirements.txt
  ┗ README.md
+```
 
 ---
 
