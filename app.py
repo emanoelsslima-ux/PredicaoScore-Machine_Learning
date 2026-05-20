@@ -75,13 +75,21 @@ if st.button("Realizar previsão"):
     # Fazer previsão
     previsao = modelo.predict(dados)
 
+    resultado = previsao[0]
+
     # Resultado
     st.subheader("Resultado")
 
-    if previsao[0] == 1:
-        st.success("Cliente aprovado pelo modelo")
+    if resultado == "Good":
+        st.success("🟢 Score GOOD — Cliente aprovado")
+
+    elif resultado == "Standard":
+        st.warning("🟡 Score STANDARD — Atenção")
+
     else:
-        st.error("Cliente não aprovado pelo modelo")
+        st.error("🔴 Score POOR — Cliente não aprovado")
+
+    st.write(f"Classificação do modelo: {resultado}")
 
     # Mostrar dados usados
     st.write("Dados utilizados:")
