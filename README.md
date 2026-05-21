@@ -95,3 +95,11 @@ Projeto desenvolvido para praticar e demonstrar conhecimentos em:
 - Deploy local com Streamlit
 - Treinamento de modelos com Scikit-Learn
 - Construção de interfaces interativas em Python
+
+## Autor
+
+Victor Emanoel
+
+GitHub: https://github.com/emanoelsslima-ux
+
+LinkedIn: https://www.linkedin.com/in/victorlimapy
